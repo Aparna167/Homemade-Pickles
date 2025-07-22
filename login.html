@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lbg">
+<div class="container-fluid">
+    <div class="col-md-6 image-section">
+        <img src="l1.jpg" alt="Sample Image" class="img-fluid h-100 w-100">
+    </div>
+    <div class="col-12 col-md-6 form-section">
+        <h1 class="mb-4 mh">Suvas Home Foods</h1>
+        <h1 class="mb-4 sh">* Welcome You *</h1>
+        <h2 class="mb-4 ssh">Login</h2>
+        <form id="loginForm" class="w-75">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="country" class="form-label">Country</label>
+                <select id="country" class="form-select">
+                    <option value="India">India</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div id="errorrMessage" class="mb-3"></div>
+            <button type="submit" class="lb btn btn-primary">Login</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

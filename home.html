@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="nb navbar  navbar-expand-lg navbar-light  fixed-top">
+    <div class="mt-0 container">
+        <a class="navbar-brand" href="#">
+            <img src="hl1.jpg" alt="Logo" class="ii1 d-inline-block align-text-top">
+            Aparneswari Sreeram HomeMadePickles
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                <li class="nav-item"><a class="nav-link" href="orders.html">Orders</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="hl2.jpg" alt="User Logo" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Hi, <span id="userName"></span></a></li>
+                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="hcc1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="hcc2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="hcc3.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<section class="ss p-5">
+    <h2 class="hh text-center mb-4">About Aparneswari Home Foods</h2>
+    <p class="text-center">At Aparneswari Home Foods, we take pride in offering a diverse range of homemade delicacies that bring the authentic taste of traditional Indian cuisine to your table. Our selection includes both vegetarian and non-vegetarian pickles, each crafted with the finest ingredients and time-honored recipes.
+
+        Our vegetarian pickles feature classics like tangy mango pickle, zesty lemon pickle, and the unique gongura pickle, all made from fresh produce and aromatic spices. For those seeking more robust flavors, our non-vegetarian pickles, such as chicken and mutton varieties, are prepared using high-quality meats and a blend of traditional spices, offering a rich and savory experience.
+        
+        In addition to our pickles, we offer homemade ghee, prepared by slowly simmering butter to remove water content and milk solids, resulting in a pure, golden clarified butter with a nutty aroma. Our fresh honey is sourced directly from local beekeepers, ensuring natural sweetness and health benefits. We also provide a selection of traditional sweets and snacks, each prepared with authentic recipes to bring the taste of home to your table.
+        
+        At Aparneswari Home Foods, our commitment to quality and authenticity ensures that every product is made with care, preserving the rich flavors and traditions of Indian cuisine.</p>
+</section>
+<section class="p-5 bg">
+    <h2 class="text-center mb-5">Ingredients We Use</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="i1.jpg" class="imggg card-img-top" alt="Ingredient 1">
+                <div class="card-body">
+                    <h5 class="card-title">Red Chilli Powder</h5>
+                    <p class="card-text">Our homemade red chili powder is prepared by sun-drying select red chilies and grinding them into a fine powder. It imparts a vibrant color and a spicy kick to our dishes, enhancing their flavor profile.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="i2.jpg" class="imggg card-img-top" alt="Ingredient 2">
+                <div class="card-body">
+                    <h5 class="card-title">Turmeric Powder</h5>
+                    <p class="card-text">We use freshly ground turmeric, known for its deep golden hue and earthy aroma. Turmeric adds warmth and a subtle bitterness to our recipes, along with its renowned health benefits.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="i3.jpg" class="imggg card-img-top" alt="Ingredient 3">
+                <div class="card-body">
+                    <h5 class="card-title">Coriander Powder</h5>
+                    <p class="card-text">We prepare coriander powder by roasting and grinding coriander seeds. It adds a mild, slightly sweet, and citrusy flavor, complementing the heat of the chilies and the tanginess of tamarind.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="i4.jpg" class="imggg card-img-top" alt="Ingredient 4">
+                <div class="card-body">
+                    <h5 class="card-title">Lemon</h5>
+                    <p class="card-text">Freshly picked lemons are used for their juice and zest, providing a zesty and refreshing citrus note that elevates the overall flavor of our products.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="i5.jpg" class="imggg card-img-top" alt="Ingredient 5">
+                <div class="card-body">
+                    <h5 class="card-title">Ginger Garlic Paste</h5>
+                    <p class="card-text">Our ginger garlic paste is made from fresh ginger roots and garlic cloves, blended to perfection. This aromatic paste forms the base of many of our recipes, imparting a robust and savory depth to the flavors.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="i6.jpg" class="imggg card-img-top" alt="Ingredient 6">
+                <div class="card-body">
+                    <h5 class="card-title">Refined Oil</h5>
+                    <p class="card-text">We utilize pure, cold-pressed oils, such as sesame or mustard oil, depending on the recipe. These oils act as a preservative and carry the flavors of the spices, ensuring longevity and richness in taste.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="i7.jpg" class="imggg card-img-top" alt="Ingredient 7">
+                <div class="card-body">
+                    <h5 class="card-title">Mango</h5>
+                    <p class="card-text">Mangoes are rich in vitamins A and C, folate, and fiber. They also contain antioxidants like zeaxanthin and beta-carotene, which support eye health and may protect against certain types of cancer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="i8.jpg" class="imggg card-img-top" alt="Ingredient 8">
+                <div class="card-body">
+                    <h5 class="card-title">Amla</h5>
+                    <p class="card-text"> Amla is renowned for its high vitamin C content and potent antioxidant properties. It supports immune function, aids in digestion, and promotes healthy skin and hair.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="i9.jpg" class="imggg card-img-top" alt="Ingredient 9">
+                <div class="card-body">
+                    <h5 class="card-title">Tomato</h5>
+                    <p class="card-text"> Tomatoes are rich in vitamins C and K, potassium, and folate. They are also a major source of the antioxidant lycopene, which has been linked to many health benefits, including reduced risk of heart disease and cancer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="i10.jpg" class="imggg card-img-top" alt="Ingredient 10">
+                <div class="card-body">
+                    <h5 class="card-title">Gongura</h5>
+                    <p class="card-text"> Gongura leaves are an excellent source of folate, riboflavin, iron, zinc, antioxidants, and vitamins A, B6, and C. They are known for their distinctive tangy flavor and are commonly used in traditional dishes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="i11.webp" class="imggg card-img-top" alt="Ingredient 11">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken and Mutton</h5>
+                    <p class="card-text">Chicken is a versatile protein source, low in fat, and provides essential nutrients and Mutton, or lamb meat, is a rich source of high-quality protein and essential amino acids, which are vital for red blood cell formation and immune support. </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="i12.jpg" class="imggg card-img-top" alt="Ingredient 12">
+                <div class="card-body">
+                    <h5 class="card-title">Fish and Prawns</h5>
+                    <p class="card-text"> Fish is an excellent source of lean protein and is rich in omega-3 fatty acids, which are beneficial for heart health and Prawns are a low-fat source of protein, rich in vitamins such as B12 and E, and minerals like zinc and selenium.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="bgg text-center py-4">
+    <a href="shop.html" class="btn btn-primary btn-lg">Shop Now</a>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

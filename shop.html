@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Aparneswari HomeMadePickles</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="shop.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="shop-container">
+    
+    <nav class="nb navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="mt-0 container">
+            <a class="navbar-brand" href="#">
+                <img src="hl1.jpg" alt="Logo" class="ii1 d-inline-block align-text-top">
+                Aparneswari HomeMadePickles
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" id="navbarDropdown"  role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Shop</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#veg-pickles">veg-pickles</a></li>
+                            <li><a class="dropdown-item" href="#nonveg-pickles">nonveg-pickles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="orders.html">Orders</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="hl2.jpg" alt="User Logo" class="rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Hi, <span id="userName"></span></a></li>
+                            <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class=" mt-5 pt-5">
+        <h1 class="text-center mb-2 smh smhbg">"Aparneswari HomeMadePickles – Where Tradition Meets Taste!"</h1>
+
+        
+        <section id="veg-pickles">
+            <h2 class="text-center mb-4">Veg Pickles</h2>
+            <p class="sp">Homemade vegetarian pickles are a treasure trove of tangy, spicy, and flavorful delights, crafted using fresh vegetables and fruits like mangoes, limes, and garlic. These pickles embody the essence of traditional recipes passed down through generations. Perfect for rice, rotis, or snacks, they are both delicious and a healthy way to enhance your dining experience.</p>
+            <div class="row" id="veg-pickles-container">
+                
+            </div>
+        </section>
+
+        
+        <section id="nonveg-pickles" class="mt-2">
+            <h2 class="text-center mb-4">Non-Veg Pickles</h2>
+            <p class="sp">Non-vegetarian pickles bring the richness of tender meat and seafood together with bold spices to create a mouthwatering condiment. From chicken to fish and prawn pickles, these traditional recipes offer irresistible flavors for meat lovers, perfect as a side with rice, dosas, or parathas.</p>
+            <div class="row" id="nonveg-pickles-container">
+    
+            </div>
+        </section>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders - Suvas Home Foods</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="obg">
+    
+    <nav class="nb navbar navbar-expand-lg navbar-light  fixed-top">
+        <div class="mt-1 container">
+            <a class="navbar-brand" href="#">
+                <img src="hl1.jpg" alt="Logo" class="ii1 d-inline-block align-text-top">
+                Aparneswari HomeMadePickles
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Orders</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="hl2.jpg" alt="User Logo" class="rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Hi, <span id="userName"></span></a></li>
+                            <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="hc1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="hc2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="hc3.webp" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+
+    
+
+    <div class="container my-5">
+        <div class="row">
+            <h1 class="ohh">Make Your Order!</h1>
+            
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="ocard-header">
+                        <h4 class="oh">Order Summary</h4>
+                    </div>
+                    <div class="ocard-body">
+                        <ul id="order-list" class="list-group"></ul>
+                        <hr>
+                        <p class="op">Total Items: <span id="total-items"></span></p>
+                        <p class="op">Total Weight: <span id="total-weight"></span> kg</p>
+                        <p class="op">Total Cost: ₹<span id="total-cost"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="ocard-header">
+                        <h4 class="oh">Address</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="address-form">
+                            <div class="mb-3">
+                                <label for="name" class="oform-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                                <small class="text-danger d-none" id="name-error">Name must contain only letters.</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mobile" class="oform-label">Mobile Number</label>
+                                <input type="text" class="form-control" id="mobile" maxlength="10" required>
+                                <small class="text-danger d-none" id="mobile-error">Mobile number must be 10 digits.</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="door-no" class="oform-label">Door No.</label>
+                                <input type="text" class="form-control" id="door-no" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="village" class="oform-label">Village</label>
+                                <input type="text" class="form-control" id="village" required>
+                                <small class="text-danger d-none" id="village-error">Village name must contain only letters.</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="district" class="oform-label">District</label>
+                                <input type="text" class="form-control" id="district" required>
+                                <small class="text-danger d-none" id="district-error">District name must contain only letters.</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pincode" class="oform-label">Pincode</label>
+                                <input type="text" class="form-control" id="pincode" maxlength="6" required>
+                                <small class="text-danger d-none" id="pincode-error">Pincode must be 6 digits.</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="state" class="oform-label">State</label>
+                                <input type="text" class="form-control" id="state" required>
+                                <small class="text-danger d-none" id="state-error">State name must contain only letters.</small>
+                            </div>
+                            <button type="button" class="ob btn btn-success" id="save-address-btn">Save Address</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class=" text-center my-4">
+            <button class="opb btn btn-primary" id="proceed-btn" disabled>Proceed</button>
+        </div>
+
+        
+        <div id="confirmation-message" class="text-center mt-4 d-none">
+            <div class="card">
+                <div class="oocard-body">
+                    <h4 class="ocard-header">Thank you! Order is placed...</h4>
+                    <p class="opp">You will receive further updates on your mobile number.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
