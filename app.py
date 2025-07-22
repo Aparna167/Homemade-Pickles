@@ -1,11 +1,9 @@
 from flask import Flask, render_template, request, redirect, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
 import os
-
-# Initialize Flask app and set template folder
 app = Flask(__name__, template_folder='.')
 
-# Configure SQLite database
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///picklenest.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
@@ -88,5 +86,5 @@ def static_files(filename):
 
 if __name__ == '__main__':
     with app.app_context():
-        db.create_all()  # Ensures DB and tables are created
+        db.create_all()  
     app.run(debug=True)
