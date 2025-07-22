@@ -10,7 +10,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///picklenest.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
-# --------------------- DATABASE MODELS ---------------------
 
 class Contact(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -29,8 +28,6 @@ class UserLogin(db.Model):
     username = db.Column(db.String(100))
     password = db.Column(db.String(100))
 
-
-# --------------------- ROUTES ---------------------
 
 @app.route('/')
 def home():
@@ -88,7 +85,6 @@ def thankyou():
 def static_files(filename):
     return send_from_directory('.', filename)
 
-# --------------------- MAIN ---------------------
 
 if __name__ == '__main__':
     with app.app_context():
